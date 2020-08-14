@@ -3,8 +3,10 @@ os: osx
 
 language: ruby
 
-script:
+before_script:
   - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   - brew tap leominov/tap
-  - brew install yacca
+
+script:
+  - brew install yucca
   - yucca version
