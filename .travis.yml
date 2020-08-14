@@ -5,6 +5,6 @@ language: ruby
 
 script:
   - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  - brew tap leominov/brew
-  - brew install leominov/brew/yacca
+  - brew tap leominov/tap
+  - brew install leominov/tap/yacca
   - yucca version
