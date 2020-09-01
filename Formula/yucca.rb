@@ -3,8 +3,8 @@ class Yucca < Formula
   homepage "http://yucca.app/"
   version "0.3.0"
 
-  depends_on "ffmpeg"
-  depends_on "docker"
+  depends_on "ffmpeg" => :recommended
+  depends_on "docker" => :recommended
 
   if OS.mac?
     url "https://get.yucca.app/v0-3-0/darwin_amd64/yucca"
