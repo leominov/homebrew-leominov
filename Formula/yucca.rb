@@ -1,18 +1,18 @@
 class Yucca < Formula
   desc "Yucca Stream Server"
   homepage "http://yucca.app/"
-  version "0.3.0"
+  version "0.3.1"
 
-  depends_on formula: "ffmpeg" => :recommended
-  depends_on formula: "docker" => :recommended
+  depends_on "ffmpeg"
+  depends_on "docker"
 
   if OS.mac?
-    url "https://get.yucca.app/v0-3-0/darwin_amd64/yucca"
-    sha256 "48185d4fdbc6079e855f881a0e3544431ea28debe4e1547e93d9a0e1f95cd456"
+    url "https://get.yucca.app/v0-3-1/darwin_amd64/yucca"
+    sha256 "5103a57ab82fa73b61bbfb1bdf946eae8e9034cac15acfb4eb6aba743acec90f"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://get.yucca.app/v0-3-0/linux_amd64/yucca"
-      sha256 "4eea1cabb8639406e8391be8ef13e26e06b087f2763d954840c44cf51a1d892d"
+      url "https://get.yucca.app/v0-3-1/linux_amd64/yucca"
+      sha256 "a338d47b8afe1039db2121d927de8e1168951d409aa40a0b025baf3f1ef30ab0"
     end
   end
 
