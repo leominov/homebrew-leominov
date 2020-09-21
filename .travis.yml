@@ -7,8 +7,5 @@ before_script:
   - brew tap leominov/leominov
 
 script:
-  - brew install yucca
+  - brew install yucca --without-docker --without-ffmpeg
   - yucca version
-  # Deps
-  - ffmpeg -version
-  - docker version || true
